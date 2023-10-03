@@ -1,0 +1,61 @@
+.stereo_trackList {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2.14in;
+}
+
+.stereo_trackList_song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.stereo_trackList_song_num , .stereo_trackList_song_time , .stereo_trackList_song_title {
+    color: var(--color-white);
+    font-family: var(--font-titles);
+    font-weight: lighter;
+}
+
+.stereo_trackList_song_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 2rem;
+
+}
+
+.stereo_trackList_song_title h3{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+}
+
+.stereo_trackList_song_title span {
+    font-size: 13px;
+}
+
+.stereo_trackList_song_num {
+    margin: 0 2rem 0 0;
+    font-size: 18px;
+}
+
+.stereo_trackList_song_time {
+    margin: 0 4rem;
+    font-size: 18px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 990px){
+    .stereo_trackList_song_title h3{
+        font-size: 13px;
+    }
+
+    .stereo_trackList_song_title span {
+        font-size: 9px;
+    }
+}

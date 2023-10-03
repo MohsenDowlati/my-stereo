@@ -1,0 +1,115 @@
+.stereo_navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stereo_navbar_right {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+.stereo_navbar_right div{
+    display: flex;
+    flex-direction: column;
+}
+
+.stereo_navbar_right div:nth-child(n) {
+    cursor: pointer;
+}
+
+.stereo_navbar_menu {
+    z-index: 100001;
+    background-color: #2d2d2d;
+    width: 400px;
+    height: 100vh
+}
+
+.stereo_navbar_menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stereo_navbar_menu_list {
+    overflow-y: scroll;
+    height: 70%;
+    margin-right: 1.5rem;
+}
+.stereo_navbar_menu_list div {
+    padding: 0;
+}
+
+.stereo_navbar_menu_list p {
+    color: var(--color-white);
+    font-size: 40px;
+    font-family: var(--font-headers);
+    cursor: pointer;
+    margin: 1rem 2rem;
+    text-transform: uppercase;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stereo_navbar_menu_list span {
+    font-size: 16px;
+    margin-left: .2rem;
+}
+
+.stereo_navbar_menu_footer {
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+}
+.stereo_navbar_menu_footer div:nth-of-type(1){
+    margin-bottom: 1rem;
+}
+
+.stereo_navbar_menu_footer button {
+    font-size: 28px;
+    padding:.1rem .9rem;
+    text-transform: uppercase;
+}
+
+.stereo_navbar_menu_footer button:nth-of-type(1){
+    background-color: #2d2d2d;
+    border: 1px solid var(--color-white);
+}
+
+.stereo_navbar_menu_footer button:nth-of-type(1):hover {
+    background-color: var(--color-white);
+}
+
+.stereo_navbar_menu_footer button:nth-of-type(2) {
+    background-color: #2d2d2d;
+    color: #fdfdfd;
+}
+
+.sub {
+    margin-left: 2rem;
+}
+
+.sub p {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+    color: #807b7b;
+    padding: 0;
+
+}
+
+.sub p:hover {
+    color: #fdfdfd;
+}
+
+.slide-in-right {
+    -webkit-animation: slide-in-right .3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right .3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

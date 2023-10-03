@@ -1,0 +1,60 @@
+.stereo_cookie {
+    position: sticky;
+    bottom: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: var(--color-white);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: .8rem .5rem;
+}
+
+.stereo_cookie_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.stereo_cookie p {
+    font-family: var(--font-sub);
+    margin-left: 15px;
+    letter-spacing: 0.03em;
+}
+
+.stereo_cookie span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+button {
+    font-family: var(--font-headers);
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    padding: .5rem 2rem;
+    margin: 0 .25rem;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+
+button:nth-of-type(1) {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transition: 0.5s ease;
+}
+
+button:nth-of-type(2) , button:nth-of-type(1):hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1050px){
+    .stereo_cookie_btn {
+        flex-direction: column;
+    }
+}
